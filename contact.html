@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <div class="logo">
+			<h1><a href="index.html"><img src="Images/logo.png" alt=""></a></h1>
+		</div>
+    </header>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="eligibility.html">Eligibility</a>
+        <a href="registration.html">Donor Registration</a>
+        <a href="search.html">Search</a>
+        <a href="contact.html">ContactUs</a>
+        <a href="about.html">About</a>
+    </nav>
+    <section>
+        <div style="height:530px; width:700px; margin:auto; margin-top:10px; margin-bottom:10px; background-color:#f8f1e4; border:2px solid red; box-shadow:4px 1px 20px black;">
+            <form action="contact.php" method="post">
+                <div  style="padding-left:200px;">
+                    <img src="images/contact.png" align="center" /><br><br>
+                    <table  cellspacing="0" cellpadding="0"  width="500px" height="300px">  
+                        <br><br>             
+                        <tr><td style="vertical-align:middle"> Name:</td><td><input type="text" name="name" id="name" required="required" pattern="[a-zA-Z _]{2,15}" title="please enter only character  between 2 to 15 for donor name" /></td></tr>
+                        <tr><td style="vertical-align:middle">E-Mail:</td><td><input type="email" name="mail" id="mail" required="required" /></td></tr>
+                        <tr><td style="vertical-align:middle">Feedback:</td><td><textarea name="feedback" id="feedback"></textarea></td></tr>
+                        <tr><td>&nbsp;</td><td><input type="submit" value="Send Us" name="sbmt" id="con_form" style="border:0px; background:linear-gradient(#900,#D50000); width:100px; height:30px; border-radius:10px 1px 10px 1px; box-shadow:1px 1px 5px black; color:white; font-weight:bold; font-size:14px; text-shadow:1px 1px 6px black; "></td></tr>
+                    </table>
+                </div>    
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="f_nav">
+		<ul>
+			<li class="active"><a href="index.html">Home</a></li>		
+            <li><a href="registration.html">Donor</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+	    </ul>
+	    </div>
+		<div class="copy">
+			<p class="title">&copy; All Rights Reserved </p>
+		</div>
+	</footer>
+</body>
+</html>

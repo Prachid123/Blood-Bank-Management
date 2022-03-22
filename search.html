@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for a donor</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <div class="logo">
+			<h1><a href="index.html"><img src="Images/logo.png" alt=""></a></h1>
+		</div>
+    </header>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="eligibility.html">Eligibility</a>
+        <a href="registration.html">Donor Registration</a>
+        <a href="search.html">Search</a>
+        <a href="contact.html">ContactUs</a>
+        <a href="about.html">About</a>
+    </nav>
+    <main>
+        <section>
+            <div style="height:600px; width:700px; margin:auto; margin-top:10px; margin-bottom:10px; background-color:#f8f1e4; border:2px solid red; box-shadow:4px 1px 20px black;">
+                <form action="display.php" method="post">
+                <table cellpadding="0" cellspacing="0" style="margin:auto; width:100%; " >
+                    <tr><td colspan="2">&nbsp;</td></tr>
+                    <tr><td  style=" padding-left:10px;" ><img src="Images/search.jpg" width="670px" height="200px"class="shaddoww"/>&nbsp; </td></tr>
+                    <td style="vertical-align:top;padding-top:20px;">
+                        <table cellpadding="0" cellspacing="0" style="width:80%; height:80px;">
+                            <tr><td>Enter city for search blood</td><td><input type="text" name="city" id="city"></td>
+                                <tr><td>&nbsp;</td><td><input  type="submit" value="Search" name="sbmt" id="form" style="border:0px; background:linear-gradient(#900,#D50000); width:100px; height:30px; border-radius:10px 1px 10px 1px; box-shadow:1px 1px 5px black; color:white; font-weight:bold; font-size:14px; text-shadow:1px 1px 6px black; "></td></tr>
+
+                        </table>
+                        <p class="header"><br>
+                            Note:You can search for a donor in the above search box by entered the name of city.
+                        </p>
+                    </td>
+                </table>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="f_nav">
+		<ul>
+			<li class="active"><a href="index.html">Home</a></li>		
+            <li><a href="registration.html">Donor</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+	    </ul>
+	    </div>
+		<div class="copy">
+			<p class="title">&copy; All Rights Reserved </p>
+		</div>
+	</footer>
+</body>
+</html>

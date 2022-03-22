@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <script>
+        function validate(age){
+            var ans="not eigible";
+            if(age>=18 && age<=60){
+                ans="eligible";
+            }
+            return(ans);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+			<h1><a href="index.html"><img src="Images/logo.png" alt=""></a></h1>
+		</div>
+    </header>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="eligibility.html">Eligibility</a>
+        <a href="registration.html">Donor Registration</a>
+        <a href="search.html">Search</a>
+        <a href="contact.html">ContactUs</a>
+        <a href="about.html">About</a>
+    </nav>
+    <section> 
+        <h1 class="heading">Eligibilty for Blood Donation</h1><br>
+        <div class="eligible">
+        <script>
+            var age=parseInt(prompt("Enter age"));
+            var status=validate(age);
+            document.write("You are <b>"+status+"</b> for donation");
+        </script> 
+        </div> 
+    </section>
+        <section class="bg-dark">   
+        <h2>To be eligible to donate whole blood, plasma or platelets there are some conditions</h2>
+        <div class="content">
+        <h1>You must be<img align='right' src="images/oip(1).jpg" width="30%" height="200rem" alt=""></h1>
+        <p>
+            <ul>
+                <li>
+                    In good health
+                </li>
+                <br>
+                <li>
+                    At least 18 years old, policies may vary between individual donor centers.
+                </li>
+                <br>
+                <li>
+                    At least 110 pounds (about 50 kilograms).
+                </li>
+                <br>
+                <li>
+                    Able to pass the physical and health-history assessments.
+                </li>
+            </ul>
+          
+        </p></div>
+        </section> 
+        <br>
+        <br>
+        <section class="bg-medium">
+        <p>
+        <img align="left" src="images/OIP.jpg" alt="" width="50%" height="270px" style="padding-right: 40px; padding-left: 20px; padding-top: 20px;"><h1>You must not be suffering from</h1>
+        <ul type="disc" class="content">
+            <li>
+                Hemoglobin deficiency / Anemia (recently)
+            </li>
+            <li>Major Surgery (within the last 3 months)</li>
+            <li>Small Pox Vaccination (within the last 3weeks)</li>
+            <li>Blood Donation (within the last 3 months)</li>
+            <li>Organ Transplant (within one year)
+            </li>
+            <li>
+                Chicken Pox (within 1 year)
+            </li>
+            <li>Any other type of Jaundice (within 5 years)</li>
+            <li>Kidney or Heart disease</li>
+            <li>Any allergies (Only if you are suffering from severe symptoms)</li>
+            <li>AIDS # Diabetes (are you under medication currently?)</li>
+            <li> Hormonal disorders</li>
+        </ul></p>
+    </div>
+    </section>
+
+<footer>
+    <div class="f_nav">
+	<ul>
+        <li class="active"><a href="index.html">Home</a></li>		
+        <li><a href="registration.html">Donor</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+	</ul>
+	</div>
+	<div class="copy">
+		<p class="title">&copy; All Rights Reserved </p>
+	</div>
+</footer>
+</body>
+</html>
